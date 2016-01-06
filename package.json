@@ -18,5 +18,12 @@
   "homepage": "https://github.com/sulliwane/react-native-time-picker#readme",
   "dependencies": {
     "moment": "^2.10.6",
-  }
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "datepicker",
+    "timepicker",
+    ],
 }
