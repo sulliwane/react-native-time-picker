@@ -1,7 +1,7 @@
 {
   "name": "react-native-time-picker",
   "version": "0.1.0",
-  "description": "A little  cross platform date-picker",
+  "description": "A pure JS date and time picker for react-native(iOS and android)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
