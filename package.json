@@ -1,6 +1,6 @@
 {
   "name": "react-native-time-picker",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A little  cross platform date-picker",
   "main": "index.js",
   "scripts": {
