@@ -71,7 +71,7 @@ var DatePicker = React.createClass({
   },
   getInitialState:function(){
     this._years = [];
-    //TODO detect types 
+    //TODO detect types
     var _maxYear = this.props.maxYear ? this.props.maxYear : moment().get('year') - 15;
     var _minYear = this.props.minYear ? this.props.minYear : (_maxYear - 50);
     for (var i = _maxYear,j = 0; i > _minYear; i--,j++) {
@@ -92,10 +92,10 @@ var DatePicker = React.createClass({
   _confirm:function(){
     console.log('Date=' + this.state.year + this.state.month + this.state.day);
     var birthday = {
-      year: this.state.year,
-      month: this.state.month
-      day: this.state.day
-    };
+        year: this.state.year,
+        month: this.state.month,
+        day: this.state.day,
+       };
     this.props.onConfirm(birthday);
     this._cancel();
   },
