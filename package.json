@@ -1,0 +1,29 @@
+{
+  "name": "react-native-time-picker",
+  "version": "0.1.0",
+  "description": "A pure JS date and time picker for react-native(iOS and android)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulliwane/react-native-time-picker.git"
+  },
+  "author": "ChatNeighbors",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sulliwane/react-native-time-picker/issues"
+  },
+  "homepage": "https://github.com/sulliwane/react-native-time-picker#readme",
+  "dependencies": {
+    "moment": "^2.10.6",
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "datepicker",
+    "timepicker",
+    ],
+}
