@@ -68,11 +68,10 @@ var DatePicker = React.createClass({
     onConfirm: React.PropTypes.func,
     maxYear: React.PropTypes.number,
     minYear: React.PropTypes.number,
-    defaultDate: React.PropTypes.string,
   },
   getInitialState:function(){
     this._years = [];
-    //检测类型。。
+    //TODO detect types 
     var _maxYear = this.props.maxYear ? this.props.maxYear : moment().get('year') - 15;
     var _minYear = this.props.minYear ? this.props.minYear : (_maxYear - 50);
     for (var i = _maxYear,j = 0; i > _minYear; i--,j++) {
@@ -86,12 +85,18 @@ var DatePicker = React.createClass({
     };
   },
   _cancel:function(){
-    this.props.cancel();
+    if (this.props.onCancel) {
+      this.props.onCancel();
+    }
   },
   _confirm:function(){
     console.log('Date=' + this.state.year + this.state.month + this.state.day);
-    var birthday = this.state.month + ' ' + this.state.day + ', ' + this.state.year;
-    this.props.setUserInformation('birthday',birthday);
+    var birthday = {
+      year: this.state.year,
+      month: this.state.month
+      day: this.state.day
+    };
+    this.props.onConfirm(birthday);
     this._cancel();
   },
   _setYear:function(year){
@@ -121,7 +126,6 @@ var DatePicker = React.createClass({
     return (
       <View style={styles.container}>
         <View style={{height:SCREEN_HEIGHT * 0.5 - 40}}></View>
-
         <View style={{flex:1}}>
           <View style={styles.selectContainer}>
             <TouchableOpacity onPress={this._cancel}>
