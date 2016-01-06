@@ -1,6 +1,6 @@
 {
   "name": "react-native-time-picker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A pure JS date and time picker for react-native(iOS and android)",
   "main": "index.js",
   "scripts": {
