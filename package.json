@@ -1,0 +1,23 @@
+{
+  "name": "react-native-time-picker",
+  "version": "1.0.0",
+  "description": "A little  cross platform date-picker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulliwane/react-native-time-picker.git"
+  },
+  "author": "ChatNeighbors",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sulliwane/react-native-time-picker/issues"
+  },
+  "homepage": "https://github.com/sulliwane/react-native-time-picker#readme",
+  "dependencies": {
+    "moment": "^2.10.6",
+    "react-native": "^0.17.0",
+  }
+}
